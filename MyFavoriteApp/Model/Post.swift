@@ -9,8 +9,13 @@
 import Foundation
 
 struct Post: Codable {
-    let favoriteApp: String
+    let favApp: String
     let name: String
+    
+    init(favApp: String, name: String) {
+        self.favApp = favApp
+        self.name = name
+    }
     
 }
 
